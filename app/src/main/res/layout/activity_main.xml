@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="activity"
+            type="com.dev.mohitmunjal.MainActivity" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<TextView
+    android:text="Room"
+    android:textStyle="bold"
+    android:textColor="@android:color/darker_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:padding="5dp"
+        android:id="@+id/spinnerRooms"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey"
+        android:entries="@array/rooms"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="@{()->activity.onSubmit()}"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:text="@string/submit"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

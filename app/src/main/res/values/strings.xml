@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">MohitMunjal</string>
+    <string name="submit">Submit</string>
+    <string-array name="rooms">
+        <item>Select Room</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
